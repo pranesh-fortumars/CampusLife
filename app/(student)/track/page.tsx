@@ -20,7 +20,9 @@ import {
   Settings,
   ChevronRight,
   ShieldCheck,
-  X
+  X,
+  ShoppingBag,
+  Wallet
 } from 'lucide-react';
 import { useApp } from '@/lib/data/store';
 import { 
@@ -102,6 +104,22 @@ export default function TrackPage() {
         >
           <FileText className="w-3.5 h-3.5" />
           Assignments &amp; Exams
+        </Link>
+
+        <Link
+          href="/track/marketplace"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-indigo-50 text-indigo-700 border border-indigo-200 hover:bg-indigo-100"
+        >
+          <ShoppingBag className="w-3.5 h-3.5" />
+          Marketplace
+        </Link>
+
+        <Link
+          href="/track/expenses"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
+        >
+          <Wallet className="w-3.5 h-3.5" />
+          Expenses
         </Link>
       </div>
 
@@ -345,9 +363,13 @@ export default function TrackPage() {
                         <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
                           {subj.code} • {subj.credits} CREDITS {subj.isElective ? '• ELECTIVE' : ''}
                         </span>
-                        <h4 className="text-sm font-bold text-slate-900 leading-snug">
-                          {subj.name}
-                        </h4>
+                        <Link 
+                          href={subj.code.includes('302') || subj.name.toLowerCase().includes('database') ? '/track/subjects/dbms' : `/track/subjects/${subj.id}`}
+                          className="text-sm font-bold text-slate-900 leading-snug hover:text-indigo-600 transition-colors flex items-center gap-1 group"
+                        >
+                          <span>{subj.name}</span>
+                          <ChevronRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-indigo-600 transition-colors" />
+                        </Link>
                         <p className="text-[11px] text-slate-500 font-medium">
                           {subj.faculty}
                         </p>

@@ -20,7 +20,10 @@ import {
   CheckCircle2, 
   FileText,
   X,
-  Sparkles
+  Sparkles,
+  Building2,
+  ShoppingBag,
+  GraduationCap
 } from 'lucide-react';
 import { useApp } from '@/lib/data/store';
 
@@ -346,6 +349,63 @@ export default function MePage() {
             </div>
             <ChevronRight className="w-4 h-4 text-slate-400" />
           </div>
+
+          {/* Item 7: Academic Program Selection (Step 2) */}
+          <Link
+            href="/onboarding/program"
+            className="p-3.5 flex items-center justify-between hover:bg-slate-50 cursor-pointer transition-colors block"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center">
+                <GraduationCap className="w-4 h-4" />
+              </div>
+              <div>
+                <p className="text-xs font-bold text-slate-800">Academic Program Selection</p>
+                <p className="text-[10px] text-slate-400">DTU ERP auto-sync &amp; cohort configuration</p>
+              </div>
+            </div>
+            <span className="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-[10px] font-bold rounded">
+              Step 2
+            </span>
+          </Link>
+
+          {/* Item 8: Student Marketplace */}
+          <Link
+            href="/track/marketplace"
+            className="p-3.5 flex items-center justify-between hover:bg-slate-50 cursor-pointer transition-colors block"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center">
+                <ShoppingBag className="w-4 h-4" />
+              </div>
+              <div>
+                <p className="text-xs font-bold text-slate-800">Campus Trade Marketplace</p>
+                <p className="text-[10px] text-slate-400">Textbooks, gear &amp; peer verified trades</p>
+              </div>
+            </div>
+            <span className="px-2 py-0.5 bg-emerald-50 text-emerald-700 text-[10px] font-bold rounded">
+              18 Live
+            </span>
+          </Link>
+
+          {/* Item 9: Executive Council Desk (Admin) */}
+          <Link
+            href="/admin"
+            className="p-3.5 flex items-center justify-between hover:bg-slate-50 cursor-pointer transition-colors block"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 rounded-xl bg-slate-900 text-white flex items-center justify-center">
+                <Building2 className="w-4 h-4" />
+              </div>
+              <div>
+                <p className="text-xs font-bold text-slate-800">Executive Council Desk</p>
+                <p className="text-[10px] text-slate-400">Organizer portal, verification queue &amp; audits</p>
+              </div>
+            </div>
+            <span className="px-2 py-0.5 bg-purple-50 text-purple-700 text-[10px] font-bold rounded">
+              Council Admin
+            </span>
+          </Link>
         </div>
       </div>
 

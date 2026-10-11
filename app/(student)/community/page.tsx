@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { 
   Building2, 
   Pin, 
@@ -248,16 +249,24 @@ export default function CommunityPage() {
                 <p className="text-xs font-bold leading-tight">Nov 16-17 • Campus Auditorium</p>
                 <p className="text-[10px] text-slate-300">Free Entry • Open to all branches</p>
               </div>
-              <button
-                onClick={() => setRegisteredHackCampus(!registeredHackCampus)}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
-                  registeredHackCampus
-                    ? 'bg-emerald-500 text-white'
-                    : 'bg-primary hover:bg-primary-dark text-white shadow-md'
-                }`}
-              >
-                {registeredHackCampus ? 'Registered' : 'Register'}
-              </button>
+              <div className="flex items-center gap-1.5">
+                <Link
+                  href="/community/events/hackcampus"
+                  className="px-3 py-1.5 rounded-xl text-xs font-bold bg-white/20 hover:bg-white/30 backdrop-blur-xs text-white border border-white/30 transition-all"
+                >
+                  Pass #8102 ↗
+                </Link>
+                <button
+                  onClick={() => setRegisteredHackCampus(!registeredHackCampus)}
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
+                    registeredHackCampus
+                      ? 'bg-emerald-500 text-white'
+                      : 'bg-primary hover:bg-primary-dark text-white shadow-md'
+                  }`}
+                >
+                  {registeredHackCampus ? 'Registered' : 'Register'}
+                </button>
+              </div>
             </div>
           </div>
 

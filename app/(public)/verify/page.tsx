@@ -52,7 +52,7 @@ export default function VerifyStudentIdentityPage() {
       {/* Top Header */}
       <div className="space-y-3">
         <div className="flex items-center justify-between">
-          <Link href="/home" className="p-2 -ml-2 text-slate-700 hover:text-slate-900 rounded-full">
+          <Link href="/onboarding/program" className="p-2 -ml-2 text-slate-700 hover:text-slate-900 rounded-full">
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <span className="text-xs font-bold text-slate-800">Id Verification</span>
