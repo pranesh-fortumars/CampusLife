@@ -22,7 +22,9 @@ import {
   ShieldCheck,
   X,
   ShoppingBag,
-  Wallet
+  Wallet,
+  Headphones,
+  Calculator
 } from 'lucide-react';
 import { useApp } from '@/lib/data/store';
 import { 
@@ -112,6 +114,22 @@ export default function TrackPage() {
         >
           <ShoppingBag className="w-3.5 h-3.5" />
           Marketplace
+        </Link>
+
+        <Link
+          href="/track/focus"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-indigo-50 text-indigo-700 border border-indigo-200 hover:bg-indigo-100"
+        >
+          <Headphones className="w-3.5 h-3.5" />
+          Deep Work
+        </Link>
+
+        <Link
+          href="/track/revision"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
+        >
+          <Calculator className="w-3.5 h-3.5" />
+          Revision &amp; CGPA
         </Link>
 
         <Link

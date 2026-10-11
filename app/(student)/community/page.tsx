@@ -77,24 +77,37 @@ export default function CommunityPage() {
 
       {/* Subnav Tabs */}
       <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-0.5">
-        {[
-          { id: 'feed', label: 'Feed' },
-          { id: 'clubs', label: 'Clubs & Societies' },
-          { id: 'events', label: 'Events & Fests' },
-          { id: 'study', label: 'Study Groups' }
-        ].map(tab => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id as any)}
-            className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
-              activeTab === tab.id
-                ? 'bg-primary text-white shadow-sm shadow-indigo-200'
-                : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
+        <button
+          onClick={() => setActiveTab('feed')}
+          className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
+            activeTab === 'feed'
+              ? 'bg-primary text-white shadow-sm shadow-indigo-200'
+              : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'
+          }`}
+        >
+          Feed
+        </button>
+
+        <Link
+          href="/community/clubs"
+          className="px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
+        >
+          Clubs &amp; Societies
+        </Link>
+
+        <Link
+          href="/community/events/hackcampus"
+          className="px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
+        >
+          Events &amp; Fests
+        </Link>
+
+        <Link
+          href="/community/huddles"
+          className="px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
+        >
+          Study Groups &amp; Audio
+        </Link>
       </div>
 
       {/* Category Filter Pills */}

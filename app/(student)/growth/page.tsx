@@ -107,17 +107,13 @@ export default function GrowthPage() {
           Skills Matrix
         </button>
 
-        <button
-          onClick={() => setActiveTab('projects')}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
-            activeTab === 'projects'
-              ? 'bg-primary text-white shadow-sm shadow-indigo-200'
-              : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'
-          }`}
+        <Link
+          href="/growth/portfolio"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
         >
           <Briefcase className="w-3.5 h-3.5" />
           Project Portfolio
-        </button>
+        </Link>
       </div>
 
       {/* PLACEMENT BENCHMARK - Readiness Score Card */}
