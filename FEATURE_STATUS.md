@@ -17,8 +17,11 @@
 | **Community: Doubts** | Peer Doubt exchange with notes sharing | **Completed** | OS Concurrency Notes Unit 3 attachment preview & reply |
 | **Me: Profile** | Rahul Sharma (CR, DTU), Bio, Privacy Guard status | **Completed** | Verified student badge, Section B CR, 248 DTU Peers |
 | **Me: Timeline** | 4-Year College Life Timeline with badges & categories | **Completed** | Sem 1 through Sem 6 milestones (HackDTU, Internship, TechKriti) |
-| **Finances** | Rupee daily spending tracker, categories (Canteen, Printouts) | **Completed** | Integrated ₹420 day spending & modal logger |
-| **Campus Copilot AI** | Integrated student assistant modal | **Completed** | Contextual responses for attendance bunking, OS lecture, and PhonePe prep |
+| **Student Verification** | Step 4 of 5 Student Identity Verification with institutional domain email & 6-digit code | **Completed** | [app/(public)/verify/page.tsx](file:///e:/CampusLife/app/(public)/verify/page.tsx) |
+| **Track: Day Timetable** | Week 9 day strip, LIVE NOW DBMS class, 1-tap attend, notes link & Google Calendar sync | **Completed** | [app/(student)/track/timetable/page.tsx](file:///e:/CampusLife/app/(student)/track/timetable/page.tsx) |
+| **Track: Assignments & Exams**| Urgent 1h 45m submission, Mid-Sem schedule (Nov 4-8), problem set progress & git workspace | **Completed** | [app/(student)/track/assignments/page.tsx](file:///e:/CampusLife/app/(student)/track/assignments/page.tsx) |
+| **Track: Expenses & Ledger** | Rupee budget ₹5,420/₹8,000, safe daily pace ₹368/day, Flat 302 split tab & PDF export | **Completed** | [app/(student)/track/expenses/page.tsx](file:///e:/CampusLife/app/(student)/track/expenses/page.tsx) |
+| **Campus Copilot AI Chat** | Full-screen interactive assistant with afternoon layout, skip impact & evaluation alerts | **Completed** | [app/(student)/copilot/page.tsx](file:///e:/CampusLife/app/(student)/copilot/page.tsx) |
 | **Firebase Backend** | Firestore, Auth & Analytics setup with project `campuslife-9c2f1` | **Completed** | [lib/firebase/config.ts](file:///e:/CampusLife/lib/firebase/config.ts) & [lib/firebase/services.ts](file:///e:/CampusLife/lib/firebase/services.ts) |
 | **Database Schema** | Supabase/PostgreSQL migrations & Firebase collection models | **Completed** | `supabase/migrations/20241011_initial_schema.sql` and Firestore service layer |
 | **Automated Tests** | Unit tests for attendance and What-If simulator formulas | **Completed** | 100% passed (`tests/calculations.test.mjs`) |

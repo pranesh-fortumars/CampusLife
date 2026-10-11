@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { 
   User, 
   Edit3, 
@@ -297,7 +298,10 @@ export default function MePage() {
           </div>
 
           {/* Item 4: Expense & Budget */}
-          <div className="p-3.5 flex items-center justify-between hover:bg-slate-50 cursor-pointer transition-colors">
+          <Link 
+            href="/track/expenses"
+            className="p-3.5 flex items-center justify-between hover:bg-slate-50 cursor-pointer transition-colors block"
+          >
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center">
                 <IndianRupee className="w-4 h-4" />
@@ -310,7 +314,7 @@ export default function MePage() {
             <span className="px-2 py-0.5 bg-rose-50 text-rose-700 text-[10px] font-bold rounded">
               ₹1,420 Due
             </span>
-          </div>
+          </Link>
 
           {/* Item 5: Download Semester Portfolio */}
           <div 

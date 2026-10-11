@@ -88,29 +88,21 @@ export default function TrackPage() {
           Academics
         </button>
 
-        <button
-          onClick={() => setActiveSubTab('timetable')}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
-            activeSubTab === 'timetable'
-              ? 'bg-primary text-white shadow-sm shadow-indigo-200'
-              : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'
-          }`}
+        <Link
+          href="/track/timetable"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
         >
           <Calendar className="w-3.5 h-3.5" />
           Timetable
-        </button>
+        </Link>
 
-        <button
-          onClick={() => setActiveSubTab('assignments')}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
-            activeSubTab === 'assignments'
-              ? 'bg-primary text-white shadow-sm shadow-indigo-200'
-              : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'
-          }`}
+        <Link
+          href="/track/assignments"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
         >
           <FileText className="w-3.5 h-3.5" />
           Assignments &amp; Exams
-        </button>
+        </Link>
       </div>
 
       {/* Main Academics Content */}

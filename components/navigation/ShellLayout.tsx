@@ -135,14 +135,14 @@ export function ShellLayout({ children }: { children: React.ReactNode }) {
         </main>
 
         {/* Floating Copilot AI Button */}
-        <button
-          onClick={() => setShowCopilot(true)}
+        <Link
+          href="/copilot"
           className="fixed sm:absolute bottom-20 right-4 z-30 p-3 bg-gradient-to-r from-indigo-600 to-violet-600 text-white rounded-full shadow-lg shadow-indigo-500/30 hover:scale-105 active:scale-95 transition-all flex items-center gap-1.5 text-xs font-semibold"
           title="Open Campus Copilot"
         >
           <Sparkles className="w-4 h-4 animate-spin" style={{ animationDuration: '6s' }} />
           <span className="hidden xs:inline">Copilot</span>
-        </button>
+        </Link>
 
         {/* Bottom 5-Tab Navigation Bar */}
         <nav className="fixed sm:absolute bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-100 px-3 py-2 flex items-center justify-around">
