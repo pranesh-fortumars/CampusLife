@@ -27,6 +27,7 @@ import {
   Calculator
 } from 'lucide-react';
 import { useApp } from '@/lib/data/store';
+import { SubjectItem } from '@/lib/data/initialData';
 import { 
   calculateAttendancePercentage, 
   calculateBunkAllowance, 
@@ -55,7 +56,7 @@ export default function TrackPage() {
   const [showManageModal, setShowManageModal] = useState(false);
 
   // Get active subject under test
-  const subjectUnderTest = subjects.find(s => s.id === simulatorSubjectId) || subjects[1];
+  const subjectUnderTest = subjects.find((s: SubjectItem) => s.id === simulatorSubjectId) || subjects[1];
   
   const simResults = simulateAttendance(
     subjectUnderTest.attended,
@@ -253,10 +254,10 @@ export default function TrackPage() {
                 </span>
                 <select
                   value={simulatorSubjectId}
-                  onChange={(e) => setSimulatorSubjectId(e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setSimulatorSubjectId(e.target.value)}
                   className="bg-transparent font-bold text-xs text-slate-900 border-none p-0 focus:outline-none cursor-pointer"
                 >
-                  {subjects.map(s => (
+                  {subjects.map((s: SubjectItem) => (
                     <option key={s.id} value={s.id}>
                       {s.name} ({s.code})
                     </option>
@@ -364,7 +365,7 @@ export default function TrackPage() {
 
             {/* Subject List */}
             <div className="space-y-3">
-              {subjects.map((subj) => {
+              {subjects.map((subj: SubjectItem) => {
                 const pct = calculateAttendancePercentage(subj.attended, subj.total);
                 const status = getAttendanceStatus(pct);
                 const bunkCount = calculateBunkAllowance(subj.attended, subj.total, 75.0);
