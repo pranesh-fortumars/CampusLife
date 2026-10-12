@@ -1,72 +1,107 @@
 # CampusLife — College Student Super App
 
-> **Your college life. All in one place.**
+<p align="center">
+  <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&auto=format&fit=crop&q=80" alt="CampusLife Banner" width="100%" style="border-radius: 16px;" />
+</p>
 
-CampusLife is a comprehensive, production-oriented student super app designed for Indian universities (Semesters, CGPA/SGPA, 75% Attendance thresholds, Internal exams, Clubs, Placements, Rupee expenses, Timetables) and adaptable globally.
+> **Your college life. All in one place.**  
+> Real-time Attendance Simulator • Academics & Timetables • Campus Community • Placement Hub • Cross-Platform PWA & Native Android APK
 
----
+[![Live Production Web App](https://img.shields.io/badge/Live%20Deployment-Vercel-black?style=for-the-badge&logo=vercel)](https://campus-life-m34k.vercel.app)
+[![Framework](https://img.shields.io/badge/Next.js-14.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
+[![Capacitor](https://img.shields.io/badge/Capacitor-Android%20Mobile-119EFF?style=for-the-badge&logo=capacitor)](https://capacitorjs.com)
+[![Firebase Backend](https://img.shields.io/badge/Firebase-Firestore%20%26%20Auth-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org)
 
-## 📱 High-Fidelity Modules Aligned With Design Mockups
-
-1. **Track (Academics & Attendance Tracker)**
-   - **Attendance What-If Simulator**: Predict margin before bunking or attending. Interactive counter (`-` / `+` consecutive classes), real-time projection of percentage crossing the safe 75% zone, and recovery count required if a lecture is missed.
-   - **Semester Academics Summary**: Cumulative CGPA (8.64), Semester SGPA (8.78), and Overall Attendance (81.4%) with live ERP sync status.
-   - **Enrolled Subjects Tracking**: DBMS, Operating Systems, Computer Networks, Software Engineering, and Machine Learning Elective with real-time "Can bunk X classes" / "Needs X attend to reach 75%" badges.
-   - **Weekly Timetable & Lecture Schedule**: Day & room-wise view (LH-102, CS Lab 304, Room 204).
-
-2. **Growth (Career, Skills, Placements & Projects)**
-   - **Placement Benchmark & Readiness Score**: Radial gauge showing 78% Ready (Top 15% in cohort), LeetCode streak (18d 🔥), Resume score (90%).
-   - **Resume Copilot AI integration**: Suggestions for boost metrics.
-   - **Active Projects Portfolio**: Live tags (Deployed, Milestone 3/4), tech stack tags (Python, React, MQTT, OpenCV, Node.js, MongoDB).
-   - **Skills Matrix**: Assessed via labs & peer reviews with star ratings and endorsements.
-   - **Internship Pipeline Kanban**: Stages for Applied (Microsoft, Razorpay, Swiggy), Online Assessment (Zomato HackerRank, Atlassian), and Interview Scheduled (PhonePe Technical Round 1).
-   - **Milestones & Honors**: Smart India Hackathon finalist, AWS Cloud Practitioner, Top Open-Source Contributor.
-   - **Placement Cell Sync & PDF Resume Export**.
-
-3. **Home (Student Daily Command Center)**
-   - **Class In Session / Next Lecture**: Real-time timer ("Starts in 22 mins"), Dr. Ananya Roy, 1-tap "Mark Attended" button.
-   - **4 Quick Metric Cards**: Classes Today (3 remaining), Assignments (2 pending), Tasks & Prep (4 to-do), Day Expenses (₹420 spent).
-   - **Academic Attendance Health**: Progress gauge with 75% debarment threshold line and low attendance warning alert.
-   - **Priority Checklist**: Interactive checkboxes with urgency badges (Due 5:00 PM, High Priority, Closes Tonight).
-   - **Campus Pulse Today**: TechKriti '24 AI & Robotics Hackathon, Algorithm Problem Solvers club.
-   - **Floating Action Dock**: 1-tap "Mark Attendance", "Add Task", "Expense".
-
-4. **Community (Campus Social & Academic Exchange)**
-   - **North Campus Hub**: Student network header with college verification.
-   - **Official Notices**: Dean of Academic Affairs examination schedule with verified notice badge, linked personal attendance, and PDF download.
-   - **Clubs & Societies**: ACM Student Chapter HackCampus 2024 registration card.
-   - **Peer Doubts & Resource Exchange**: Question paper requests and notes exchange with attachments (e.g., `OS_Concurrency_Notes_Unit3.pdf`).
-   - **Campus Cultural Fests**: Aurora '24 event card with reminder toggle.
-
-5. **Me (Profile & College Life Timeline)**
-   - **Verified Student ID**: Rahul Sharma (CR - Class Representative, Section B, B.Tech CSE, DTU 219CS094).
-   - **Campus Privacy Guard**: Encrypted personal academic metrics with selective project showcase.
-   - **4-Year College Journey Timeline**: Sem 1 (Orientation) to Sem 6 (Class Representative & Capstone) with badges.
-   - **Preferences & Portfolio Hub**: Copilot settings, notifications, theme switch, rupee expense dues, verified marksheet export.
+🌐 **Live Web Application**: [https://campus-life-m34k.vercel.app](https://campus-life-m34k.vercel.app)
 
 ---
 
-## 🛠️ Local Setup & Execution
+## 🌟 Key Capabilities
 
-### Isolated Local Cache
-Per requirements, all dependencies and package caches are isolated inside the project directory (`.npm-cache` and `.npmrc`) without modifying system root folders or C: drive.
+### 📱 1. Track (Academics & Attendance Engine)
+- **Attendance What-If Simulator**: Predict percentage margin before bunking or attending. Interactive counter (`-` / `+` consecutive classes), real-time projection of percentage crossing the mandatory 75% threshold, and exact recovery count required if a lecture is missed.
+- **Academic Dashboard**: Cumulative CGPA (8.64), Semester SGPA (8.78), and Overall Attendance (81.4%) with live ERP sync.
+- **Deep-Dive Subject Explorer**: DBMS (CS-302), Operating Systems, Computer Networks, Software Engineering, and Electives with lecture notes, exam papers, and wayfinding.
+- **Timetable & Dynamic Schedule**: Day, slot, and lecture-hall level view (`LH-102`, `CS Lab 304`).
+
+### 🚀 2. Growth (Career, Placement Hub & Portfolio)
+- **Placement Readiness Radar**: Real-time readiness score (78% Ready • Top 15% in cohort), LeetCode streak counter (18d 🔥), and AI Resume score.
+- **Internship Pipeline Kanban**: Multi-stage tracker for Applied, Online Assessment (OA), and Interview rounds with PhonePe, Zomato, Atlassian, and Microsoft.
+- **Student Portfolio & Project Showcase**: Verified live deployment links, tech stack badges, and peer endorsements.
+
+### 🏛️ 3. Campus Community & Lifestyle
+- **Verified Student Feed**: Official administrative notices (Dean of Academic Affairs) with downloadable exam PDFs and club activities.
+- **Clubs Directory & Audio Huddles**: Technical societies (ACM Chapter), cultural fests (Aurora '24), and virtual study rooms.
+- **Student Marketplace (Campus Trade)**: Peer-to-peer textbook and gadget exchange.
+- **Executive Council Desk (`/admin`)**: Admin dashboard for verification approvals, broadcast alerts, and council moderation.
+
+---
+
+## ⚡ Native Mobile & PWA Architecture
+
+### 📲 Cross-Platform PWA
+- **Service Worker (`public/sw.js`)**: Offline caching for core routes (`/track`, `/growth`, `/community`) and instantaneous background page loads.
+- **Native Install Prompt (`components/pwa/PwaRegister.tsx`)**: Auto-detects mobile browsers and prompts students to install CampusLife directly to their home screen.
+
+### 🤖 Native Android (Capacitor)
+- **Real-Time Cloud Synchronization**: The native Android application wraps the live Vercel production deployment (`https://campus-life-m34k.vercel.app`).
+- **Zero-Redownload Updates**: Any code pushed to `main` is instantly reflected on users' installed APKs on launch!
 
 ```bash
-# 1. Install dependencies (isolated in project)
-npm install --cache "e:\CampusLife\.npm-cache"
+# Sync web changes to native Android project
+npx cap sync android
 
-# 2. Run unit tests verifying calculation engines
-npm test
-
-# 3. Launch the development server
-npm run dev
+# Open in Android Studio to build APK
+npx cap open android
 ```
-
-Visit `http://localhost:3000` in your browser.
 
 ---
 
-## 🗄️ Database Architecture (Supabase / PostgreSQL)
+## 🔥 Backend & Database Architecture
 
-- `supabase/migrations/20241011_initial_schema.sql`: Full normalized tables for `profiles`, `colleges`, `subjects`, `attendance_records`, `timetable_entries`, `assignments`, `tasks`, `posts`, `projects`, `skills`, `job_applications`, `timeline_memories`, `expenses`, with Row Level Security (RLS) policies.
-- `supabase/seed.sql`: Seed data matching Rahul Sharma at DTU.
+### Firebase Backend (`campuslife-9c2f1`)
+- **Firestore Collections**: Real-time listeners for `profiles`, `subjects`, `tasks`, `posts`, and `expenses`.
+- **Firebase Analytics**: SSR-safe event tracking and telemetry.
+- **Client Fallback**: Local storage persistence ensures complete offline availability when network is unavailable.
+
+### Supabase / PostgreSQL Schema
+- Normalized relational schema in `supabase/migrations/20241011_initial_schema.sql` with Row Level Security (RLS) policies for enterprise institutional setups.
+
+---
+
+## 🛠️ Local Development & Setup
+
+### Isolated Project Cache
+All packages and npm caches are strictly contained inside the project folder (`.npm-cache` via `.npmrc`), preventing global cache pollution or writes to system drives.
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Run unit tests
+npm test
+
+# 3. Start local development server
+npm run dev
+
+# 4. Production build
+npm run build
+```
+
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🚀 Deployment Pipeline
+
+Every push to the `main` branch automatically triggers continuous deployment on Vercel:
+
+```bash
+git add .
+git commit -m "feat: your new feature"
+git push origin main
+```
+
+- **Production URL**: [https://campus-life-m34k.vercel.app](https://campus-life-m34k.vercel.app)
+- **Android APK**: Automatically synced with the live URL on app restart.
