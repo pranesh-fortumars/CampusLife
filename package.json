@@ -13,7 +13,6 @@
     "@capacitor/android": "^8.5.3",
     "@capacitor/cli": "^7.6.9",
     "@capacitor/core": "^8.5.3",
-    "@next/swc-win32-x64-msvc": "^16.4.0",
     "clsx": "^2.1.1",
     "firebase": "^10.14.1",
     "lucide-react": "^0.453.0",
