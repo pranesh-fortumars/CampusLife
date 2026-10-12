@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'CampusLife',
   webDir: 'out',
   server: {
-    url: 'https://campus-life-m34k.vercel.app',
+    url: 'https://campus-life-self.vercel.app',
     cleartext: true,
     androidScheme: 'https'
   }

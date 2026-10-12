@@ -7,13 +7,13 @@
 > **Your college life. All in one place.**  
 > Real-time Attendance Simulator • Academics & Timetables • Campus Community • Placement Hub • Cross-Platform PWA & Native Android APK
 
-[![Live Production Web App](https://img.shields.io/badge/Live%20Deployment-Vercel-black?style=for-the-badge&logo=vercel)](https://campus-life-m34k.vercel.app)
+[![Live Production Web App](https://img.shields.io/badge/Live%20Deployment-Vercel-black?style=for-the-badge&logo=vercel)](https://campus-life-self.vercel.app)
 [![Framework](https://img.shields.io/badge/Next.js-14.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 [![Capacitor](https://img.shields.io/badge/Capacitor-Android%20Mobile-119EFF?style=for-the-badge&logo=capacitor)](https://capacitorjs.com)
 [![Firebase Backend](https://img.shields.io/badge/Firebase-Firestore%20%26%20Auth-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org)
 
-🌐 **Live Web Application**: [https://campus-life-m34k.vercel.app](https://campus-life-m34k.vercel.app)
+🌐 **Live Web Application**: [https://campus-life-self.vercel.app](https://campus-life-self.vercel.app)
 
 ---
 
@@ -103,5 +103,5 @@ git commit -m "feat: your new feature"
 git push origin main
 ```
 
-- **Production URL**: [https://campus-life-m34k.vercel.app](https://campus-life-m34k.vercel.app)
+- **Production URL**: [https://campus-life-self.vercel.app](https://campus-life-self.vercel.app)
 - **Android APK**: Automatically synced with the live URL on app restart.
