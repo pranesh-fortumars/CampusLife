@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { AppProvider } from '@/lib/data/store';
 import { ShellLayout } from '@/components/navigation/ShellLayout';
+import { PwaRegister } from '@/components/pwa/PwaRegister';
 
 export const metadata: Metadata = {
   title: 'CampusLife — Your College Life. All In One Place.',
@@ -9,6 +10,11 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
   themeColor: '#4F46E5',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'CampusLife'
+  }
 };
 
 export default function RootLayout({
@@ -23,6 +29,7 @@ export default function RootLayout({
           <ShellLayout>
             {children}
           </ShellLayout>
+          <PwaRegister />
         </AppProvider>
       </body>
     </html>
